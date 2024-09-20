@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+<body>
+    <form action="/action">
+        <!--Input Type Attribute-->
+        <input type="text">
+        <br>
+        <input type="password">
+        <br>
+        <input type="number">
+        <br>
+        <input type="time">
+        <br>
+        <input type="color">
+        <br>
+        <hr>
+
+        <!--Placeholders & Labels With Labels Classical Approach-->
+        <input type="text" placeholder="Enter Name">
+        <br>
+        <div>
+            <label>
+                Enter your username:
+                <input type="text" placeholder="Username">
+            </label>
+        </div>
+        <br>
+        <div>
+            <label for="username">Enter your username:</label>
+            <input type="text" id="username" placeholder="Username">
+        </div>
+        <div>
+            <label for="password">Enter your password:</label>
+            <input type="password" id="password" placeholder="Password">
+        </div>
+        <div>
+            <label for="age">Enter your age:</label>
+            <input type="number" id="age" placeholder="Age">
+        </div>
+        <br>
+        <hr>
+
+        <!--Button Element, Button Type Attribute & Button Using Input-->
+        <button>Submit</button>
+        <br>
+        <button type="submit">Submit</button>
+        <br>
+        <button type="button">Do Something</button>
+        <br>
+        <button type="reset">Do Something</button>
+        <br>
+        <input type="submit" value="Click Me">
+        <br>
+        <hr>
+
+        <!--Name Attribute-->
+        <input type="text" placeholder="Enter Name" id="username" name="username">
+        <br>
+        <input type="password" placeholder="Enter Password" id="password" name="password">
+        <br>
+        <hr>
+
+        <!--Checkbox-->
+        <input type="checkbox" name="option" id="option">
+        <label for="option">A</label>
+        <input type="checkbox" name="option" id="option">
+        <label for="option">B</label>
+        <input type="checkbox" name="option" id="option">
+        <label for="option">Both A & B</label>
+        <br>
+        <hr>
+
+        <!--Radio Button-->
+        <input type="radio" name="fruit" id="apple" value="apple">
+        <label for="apple">Apple</label>
+        <input type="radio" name="fruit" id="mango" value="mango">
+        <label for="mango">Mango</label>
+        <input type="radio" name="fruit" id="orange" value="orange">
+        <label for="orange">Orange</label>
+        <br>
+        <hr>
+
+        <!--Select Input Element-->
+        <select name="Profession" id="Profession">
+            <option value="stu">Student</option>
+            <option value="dev">Developer</option>
+        </select>
+        <br>
+        <hr>
+
+        <!--Range Input Element-->
+        <label for="volume">Volume</label>
+        <input type="range" min="0" max="100" name="vol" step="10" value="70">
+        <br>
+        <hr>
+
+        <!--Text Area-->
+        <label for="feedback">Please provide your valuable feedback:</label>
+        <textarea name="feedback" id="feedback" rows="5" cols="100" placeholder="Write your feedback here"></textarea>
+        <br>
+        <hr>
+    </form>
+</body>
+</html>
